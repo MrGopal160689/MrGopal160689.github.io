@@ -1,0 +1,18 @@
+ul.project-list > dl,
+ul.category-list > li
+{
+	padding-right : 15px;
+}
+ul.project-list > dl:hover,
+ul.project-list > dl.active,
+ul.category-list > li:hover,
+ul.category-list > li.active
+{
+	box-shadow: 2px 0px 0 0 black;
+	color : black !important;
+}
+ul.project-list > dl:not(.active),
+ul.category-list > li:not(.active)
+{
+	color : #ccc;
+}
