@@ -44,11 +44,11 @@
         
         homeCtrl.data = [
             { 
-                category : 'Projects',
+                category : 'Recent projects',
                 list : [
                         {
                             title : 'English Duniya',
-                            date : new Date('21 February 2017'),
+                            date : new Date('21 March 2017'),
                             for : 'Zaya Learning Labs',
                             purpose : 'B2C',
                             description : './templates/project-english-duniya.html'
@@ -60,54 +60,74 @@
                             description : './templates/project-quiz-egg.html'
                         },{
                             title : 'Config App',
-                            date : new Date('21 February 2017'),
+                            date : new Date('21 December 2016'),
                             for : 'Zaya Learning Labs',
                             purpose : 'B2B',
                             description : './templates/project-config-app.html'
                         },{
                             title : 'Curate App',
-                            date : new Date('21 February 2017'),
+                            date : new Date('21 Jun 2015'),
                             for : 'Zaya Learning Labs',
                             purpose : 'B2B',
                             description : './templates/project-curate-app.html'
                         },{
                             title : 'Learn App',
-                            date : new Date('21 February 2017'),
+                            date : new Date('21 December 2014'),
                             for : 'Zaya Learning Labs',
                             purpose : 'B2B',
                             description : './templates/project-learn-app.html'
-                        },{
-                            title : 'Reserv.in',
-                            date : new Date('21 February 2017'),
-                            for : 'Personal',
-                            purpose : 'Side project',
-                            description : './templates/project-reserv.html'
-                        },{
-                            title : 'Billing Solution',
-                            date : new Date('21 February 2017'),
-                            for : 'Video Cable Communication',
-                            purpose : 'B2B',
-                            description : './templates/project-video-cable.html'
-                        },{
-                            title : 'Mobile animation',
-                            date : new Date('21 February 2017'),
-                            for : 'Telibees Technologies Pvt. Ltd.',
-                            purpose : 'B2B',
-                            description : './templates/project-telibees.html'
                         },
+                ]
+            },
+            {
+                category : 'Old projects',
+                list : [
+                    {
+                        title : 'Experience',
+                        for : 'Telibees & VCC',
+                        purpose : 'B2B',
+                        description : './templates/project-old-experience.html'
+                    }
                 ]
             },
             {
                 category : 'Random',
                 list : [
                     {
-                        title : 'Photography',
+                        title : 'Snap & stroke',
                         for : 'People & nature',
-                        purpose : 'Happiness'
+                        purpose : 'Happiness',
+                        description : './templates/random-photography.html'
+                    },
+                    {
+                        title : 'Tutorial',
+                        for : 'People',
+                        purpose : 'Help',
+                        description : './templates/youtube.html'
                     }
                 ]
             }
         ]
     }
 
+})();
+
+(function(){
+    angular
+        .module('portfolio')
+        .directive('onload', function() {
+          return {
+            restrict: 'A',
+            link: function(scope, element, attrs) {
+                angular.element(element).addClass('invisible')
+                element.bind('load', function() {
+                    angular.element(element).removeClass('invisible')
+                    console.log(angular.element(element).addClass('animation-fade-in'))
+                });
+                element.bind('error', function(){
+                     console.log('image could not be loaded');
+                });
+            }
+          };
+        });
 })();

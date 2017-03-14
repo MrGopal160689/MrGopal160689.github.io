@@ -1,34 +1,49 @@
-<div class="container">
+<div class="container animation-fade-in">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-			<h1>Gopal Ojha</h1>
-			<p></p>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<h1>Gopal Ojha</h1>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<h5 class="text-right visible-sm-block visible-md-block visible-lg-block">
+						<small class="text-muted">
+							<a href="mailto:#">gopal.ojha.1989@gmail.com</a> | <a target="_blank" href="https://www.linkedin.com/in/gopal-ojha-35a6043a">Linkedin</a>
+						</small>
+					</h5>
+					<h5 class="visible-xs-block">
+						<small class="text-muted">
+							<a href="mailto:#">gopal.ojha.1989@gmail.com</a> | <a target="_blank" href="https://www.linkedin.com/in/gopal-ojha-35a6043a">Linkedin</a>
+						</small>
+					</h5>
+				</div>
+			</div>
 			<hr>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 col-md-offset-1 col-lg-offset-1">
+		<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 col-md-offset-1 col-lg-offset-1">
 			<ul class="list-unstyled text-right category-list" ng-init="activeCategory = 0; homeCtrl.projectList = homeCtrl.data[activeCategory].list">
-				<li class="text-capitalize" ng-repeat="category in homeCtrl.data" ng-click="$parent.activeCategory = $index; homeCtrl.projectList = category.list; homeCtrl.selectedProject = category.list[0]; activeProject = 0" ng-class="{'active' : $parent.activeCategory == $index}">{{category.category}}</li>
+				<li class="text-capitalize" ng-repeat="category in homeCtrl.data" ng-click="$parent.activeCategory = $index; homeCtrl.projectList = category.list; homeCtrl.selectedProject = category.list[0]; $parent.activeProject = 0" ng-class="{'active' : $parent.activeCategory == $index}">{{category.category}}</li>
 			</ul>
 		</div>
 		<div class="clearfix visible-xs-block visible-sm-block"></div>
-		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ">
+		<div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 ">
 			{{homeCtrl.data.projects}}
 			<ul class="list-unstyled text-right project-list" ng-init="activeProject = 0; homeCtrl.selectedProject = homeCtrl.projectList[activeProject]">
-				<dl ng-repeat="project in homeCtrl.projectList" ng-click="homeCtrl.selectedProject = project; $parent.activeProject = $index" ng-class="{'active' : $parent.activeProject == $index}">
+				<dl ng-repeat="project in homeCtrl.projectList" ng-click="homeCtrl.selectedProject = project; $parent.activeProject = $index" ng-class="{'active' : $parent.activeProject == $index}" class="animation-fade-in">
 				  <dt><small>{{project.title}}</small></dt>
 				  <dd>
 					<ul class="list-unstyled" ng-class="{'text-muted' : $parent.activeProject == $index}">
-						<li><small>{{project.for}} | {{project.purpose}}</small></li>
-						<li ng-if="project.date"><small>{{project.date | date}}</small></li>
+						<li class="visible-md-block visible-lg-block"><small>{{project.for}} | {{project.purpose}}</small></li>
+						<li ng-if="project.date"><small>{{project.date | date:'MMM yyyy'}}</small></li>
 					</ul>
 				  </dd>
 				</dl>
 			</ul>
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
-			<h3>{{homeCtrl.selectedProject.title}}</h3>
+		<div class="col-xs-8 col-sm-8 col-md-5 col-lg-5">
+			<h3 ng-bind="homeCtrl.selectedProject.title" class="animation-fade-in"></h3>
 			<ng-include src="homeCtrl.selectedProject.description"> </ng-include>
 		</div>
 	</div>

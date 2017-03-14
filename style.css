@@ -16,3 +16,37 @@ ul.category-list > li:not(.active)
 {
 	color : #ccc;
 }
+.padding{
+	padding : 10px;
+}
+.animation-fade-in-from-bottom {
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-duration: 300ms;
+  -webkit-animation-name: fade-in-from-bottom;
+}
+@keyframes fade-in-from-bottom {
+  0% {
+    -webkit-transform: translate3d(0,20px,0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+.animation-fade-in {
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-duration: 300ms;
+  -webkit-animation-name: fade-in-from-bottom;
+}
+@keyframes fade-in-from-bottom {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.invisible{
+  visibility: 0;
+}
