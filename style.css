@@ -50,3 +50,4 @@ ul.category-list > li:not(.active)
 .invisible{
   visibility: 0;
 }
+html { overflow-y: scroll; } 
