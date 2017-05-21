@@ -1,0 +1,684 @@
+{
+  "preload" : [
+    "shapu-front.png",
+    "shapu-right.png",
+    "shapu-left.png",
+    "mountain.png",
+    "moon.png",
+    "sun.png",
+    "ice-cream.png",
+    "house.png"
+  ],
+  "background": {
+    "objects" : [
+      {
+        "type": "rectangle",
+        "fill": {
+          "type" : "gradient",
+          "stop" : [
+            { "position" : 0.4, "color" : "#D9FFC7" },
+            { "position" : 1, "color" : "#000000" }
+          ],
+          "circles" : [
+            { "x" : 0, "y" : 0, "radius" : 50},
+            { "x" : 0, "y" : 0, "radius" : 800}
+          ]
+        },
+        "stroke" : null,
+        "x": 400,
+        "y": 250,
+        "anchorX": 400,
+        "anchorY": 250,
+        "width": 800,
+        "height": 500,
+        "angle": null
+      }
+    ]
+  },
+  "foreground" : {
+    "scene" : {
+      "1": {
+        "meta": {
+          "scene": 1,
+          "duration": 2200,
+          "next": 2
+        },
+        "objects": [
+          {
+            "type": "image",
+            "url": "shapu-front.png",
+            "x": 400,
+            "y": 380,
+            "anchorX" : 63,
+            "anchorY" : 136
+          },
+          {
+            "type": "text",
+            "text": "Hi, my name is shapu",
+            "x": 400,
+            "y": 200,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          }
+        ],
+        "audio": [
+          { "url" : "hi.mp3"}
+        ]
+      },
+      "2": {
+        "meta": {
+          "scene": 2,
+          "duration": 2000,
+          "next": 3
+        },
+        "objects": [
+          {
+            "type": "image",
+            "url": "shapu-front.png",
+            "x": 400,
+            "y": 380,
+            "anchorX" : 63,
+            "anchorY" : 136
+          },
+          {
+            "type": "text",
+            "text": "let's learn something about shapes",
+            "x": 400,
+            "y": 200,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          }
+        ],
+        "audio": [
+          { "url" : "learn.mp3"}
+        ]
+      },
+      "3": {
+        "meta": {
+          "scene": 3,
+          "duration": 5000,
+          "next": 4
+        },
+        "objects": [
+          {
+            "type": "image",
+            "url": "shapu-right.png",
+            "x": 700,
+            "y": 380,
+            "anchorX" : 63,
+            "anchorY" : 87
+          },
+          {
+            "type": "rectangle",
+            "fill": {
+              "type" : "solid",
+              "color" : "rgba(256,125,125,0.85)"
+            },
+            "x": 700,
+            "y": 200,
+            "anchorX": 100,
+            "anchorY": 80,
+            "width": 200,
+            "height": 160,
+            "angle": 0,
+            "tween" : {
+              "0" : {
+                "props" : { 
+                  "from" : { "x" : 700, "y": 200, "angle" : 0 },
+                  "to" :  { "x" : 650, "y": 300, "angle" : 30 }
+                },
+                "duration" : 5000,
+                "easeFunc" : "linear"
+              }
+            }
+          },
+          {
+            "type": "rectangle",
+            "fill": {
+              "type" : "solid",
+              "color" : "rgba(256,125,125,0.85)"
+            },
+            "x": 150,
+            "y": 200,
+            "anchorX": 50,
+            "anchorY": 50,
+            "width": 100,
+            "height": 100,
+            "angle": 10,
+            "tween" : {
+              "0" : {
+                "props" : {
+                  "from" : { "x" : 150, "y": 200, "angle" : 10 },
+                  "to" : { "x" : 200, "y": 100, "angle" : 30 }
+                },
+                "duration" : 5000,
+                "easeFunc" : "linear"
+              }
+            }
+          },
+          {
+            "type": "rectangle",
+            "fill": {
+              "type" : "solid",
+              "color" : "rgba(256,125,125,0.85)"
+            },
+            "x": 100,
+            "y": 100,
+            "anchorX": 50,
+            "anchorY": 50,
+            "width": 100,
+            "height": 100,
+            "angle": 30,
+            "tween" : {
+              "0" : {
+                "props" : {
+                  "from" : {"x" : 100, "y": 100, "angle" : 30},
+                  "to" : {"x" : 150, "y": 150, "angle" : 60}
+                },
+                "duration" : 5000,
+                "easeFunc" : "linear"
+              }
+            }
+          },
+          {
+            "type": "ellipse",
+            "fill": {
+              "type" : "solid",
+              "color" : "rgba(135,190,249,0.85)"
+            },
+            "x": 100,
+            "y": 400,
+            "anchorX": 100,
+            "anchorY": 100,
+            "radiusX": 100,
+            "radiusY": 100,
+            "tween" : {
+              "0" : {
+                "props" : {
+                  "from" : {"x" : 100, "y": 400},
+                  "to" : {"x" : 300, "y": 300}
+                },
+                "duration" : 5000,
+                "easeFunc" : "linear"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": "Do you know, that everything we see around us,",
+            "x": 400,
+            "y": 456,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          },
+          {
+            "type": "text",
+            "text": "is made of simple shapes",
+            "x": 400,
+            "y": 480,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          }
+        ],
+        "audio": [
+          { "url" : "do_you_know.mp3"}
+        ]
+      },
+      "4": {
+        "meta": {
+          "scene": 4,
+          "duration": 3600,
+          "next": 5
+        },
+        "objects": [
+          {
+            "type": "image",
+            "url": "mountain.png",
+            "x": 400,
+            "y": 250,
+            "anchorX" : 211,
+            "anchorY" : 135
+          },
+          {
+            "type": "image",
+            "url": "shapu-left.png",
+            "x": 100,
+            "y": 380,
+            "anchorX" : 63,
+            "anchorY" : 87
+          },
+          {
+            "type": "text",
+            "text": "Like mountains, look like triangle",
+            "x": 400,
+            "y": 480,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          }
+        ],
+        "audio": [
+          { "url" : "mountains.mp3"}
+        ]
+      },
+      "5": {
+        "meta": {
+          "scene": 5,
+          "duration": 7400,
+          "next": 6
+        },
+        "objects": [
+          {
+            "type": "image",
+            "url": "sun.png",
+            "anchorX": 250,
+            "anchorY": 250,
+            "x": 200,
+            "y": 125,
+            "anchorX" : 250,
+            "anchorY" : 251,
+            "angle": 0,
+            "tween" : {
+              "0" : {
+                "props" : {
+                  "from" : {"angle" : 0},
+                  "to" : {"angle" : 180}
+                },
+                "duration" : 7400,
+                "easeFunc" : "linear"
+              }
+            }
+          },
+          {
+            "type": "image",
+            "url": "moon.png",
+            "x": 600,
+            "y": 125,
+            "anchorX" : 147,
+            "anchorY" : 147
+          },
+          {
+            "type": "image",
+            "url": "shapu-left.png",
+            "x": 100,
+            "y": 380,
+            "anchorX" : 63,
+            "anchorY" : 87
+          },
+          {
+            "type": "text",
+            "text": "Sun and moon, they are circles.",
+            "x": 400,
+            "y": 456,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          },
+          {
+            "type": "text",
+            "text": "Even our planet earth is a circle",
+            "x": 400,
+            "y": 480,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          }
+
+        ],
+        "audio": [
+          { "url" : "sun_moon.mp3"}
+        ]
+      },
+      "6": {
+        "meta": {
+          "scene": 6,
+          "duration": 8000,
+          "next": 7
+        },
+        "objects": [
+          {
+            "type": "image",
+            "url": "ice-cream.png",
+            "x": 400,
+            "y": 250,
+            "anchorX" : 90,
+            "anchorY" : 143
+          },
+          {
+            "type": "image",
+            "url": "shapu-right.png",
+            "x": 700,
+            "y": 380,
+            "anchorX" : 63,
+            "anchorY" : 87
+          },
+          {
+            "type": "text",
+            "text": "Do you love Ice-cream,",
+            "x": 400,
+            "y": 432,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          },
+          {
+            "type": "text",
+            "text": "ice-cream is my favourite.",
+            "x": 400,
+            "y": 456,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          },
+          {
+            "type": "text",
+            "text": "If you see, the cone of an ice-cream looks like a triangle",
+            "x": 400,
+            "y": 480,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          }
+        ],
+        "audio": [
+          { "url" : "ice-cream.mp3"}
+        ]
+      },
+      "7": {
+        "meta": {
+          "scene": 7,
+          "duration": 5400,
+          "next": 8
+        },
+        "objects": [
+          {
+            "type": "image",
+            "url": "house.png",
+            "x": 400,
+            "y": 250,
+            "anchorX" : 181,
+            "anchorY" : 151
+          },
+          {
+            "type": "image",
+            "url": "shapu-right.png",
+            "x": 700,
+            "y": 380,
+            "anchorX" : 63,
+            "anchorY" : 87
+          },
+          {
+            "type": "text",
+            "text": "Let's take this small house. It's made of a square and a triangle",
+            "x": 400,
+            "y": 480,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          }
+        ],
+        "audio": [
+          { "url" : "house.mp3"}
+        ]
+      },
+      "8": {
+        "meta": {
+          "scene": 8,
+          "duration": 4700,
+          "next": null
+        },
+        "objects": [
+          {
+            "type": "rectangle",
+            "fill": {
+              "type" : "solid",
+              "color" : "rgba(256,125,125,0.85)"
+            },
+            "x": 200,
+            "y": 200,
+            "anchorX": 100,
+            "anchorY": 80,
+            "width": 200,
+            "height": 160,
+            "angle": 0,
+            "tween" : {
+              "0" : {
+                "props" : {
+                  "from" : {"x" : 200, "y": 200, "angle" : 0},
+                  "to" : {"x" : 300, "y": 300, "angle" : 30}
+                },
+                "duration" : 5000,
+                "easeFunc" : "linear"
+              }
+            }
+          },
+          {
+            "type": "rectangle",
+            "fill": {
+              "type" : "solid",
+              "color" : "rgba(256,125,125,0.85)"
+            },
+            "x": 150,
+            "y": 200,
+            "anchorX": 50,
+            "anchorY": 50,
+            "width": 100,
+            "height": 100,
+            "angle": 10,
+            "tween" : {
+              "0" : {
+                "props" : {
+                  "from" : {"x" : 150, "y": 200, "angle" : 10},
+                  "to" : {"x" : 200, "y": 100, "angle" : 30}
+                },
+                "duration" : 5000,
+                "easeFunc" : "linear"
+              }
+            }
+          },
+          {
+            "type": "rectangle",
+            "fill": {
+              "type" : "solid",
+              "color" : "rgba(256,125,125,0.85)"
+            },
+            "x": 100,
+            "y": 100,
+            "anchorX": 50,
+            "anchorY": 50,
+            "width": 100,
+            "height": 100,
+            "angle": 10,
+            "tween" : {
+              "0" : {
+                "props" : {
+                  "from" : {"x" : 100, "y": 100, "angle" : 10},
+                  "to" : {"x" : 150, "y": 150, "angle" : 60}
+                },
+                "duration" : 5000,
+                "easeFunc" : "linear"
+              }
+            }
+          },
+          {
+            "type": "ellipse",
+            "fill": {
+              "type" : "solid",
+              "color" : "rgba(135,190,249,0.85)"
+            },
+            "x": 100,
+            "y": 400,
+            "anchorX": 100,
+            "anchorY": 100,
+            "radiusX": 100,
+            "radiusY": 100,
+            "tween" : {
+              "0" : {
+                "props" : {
+                  "from" : {"x" : 100, "y": 400},
+                  "to" : {"x" : 300, "y": 300}
+                },
+                "duration" : 5000,
+                "easeFunc" : "linear"
+              }
+            }
+          },
+          {
+            "type": "image",
+            "url": "shapu-right.png",
+            "x": 700,
+            "y": 380,
+            "anchorX" : 63,
+            "anchorY" : 87
+          },
+          {
+            "type": "text",
+            "text": "Okaay, it's your turn now,",
+            "x": 400,
+            "y": 456,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          },
+          {
+            "type": "text",
+            "text": "create something with the shapes",
+            "x": 400,
+            "y": 480,
+            "style": "normal",
+            "variant": "normal",
+            "weight": "normal",
+            "stretch": "",
+            "size": 24,
+            "lineHeight": "1",
+            "family": "indie-flower",
+            "fill": {
+              "color": "#000000"
+            },
+            "stroke": null,
+            "angle": 0
+          }
+        ],
+        "audio": [
+          { "url" : "yourturn.mp3"}
+        ]
+      }
+    }
+  },
+  "start" : "1",
+  "end" : "8",
+  "width" : 800,
+  "height" : 500
+}

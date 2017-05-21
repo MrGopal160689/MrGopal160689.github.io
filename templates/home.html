@@ -1,4 +1,4 @@
-<div class="container animation-fade-in">
+<div class="container-fluid animation-fade-in">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 			<div class="row">
@@ -33,7 +33,7 @@
 			{{homeCtrl.data.projects}}
 			<ul class="list-unstyled text-right project-list" ng-init="activeProject = 0; homeCtrl.selectedProject = homeCtrl.projectList[activeProject]">
 				<dl ng-repeat="project in homeCtrl.projectList" ng-click="homeCtrl.selectedProject = project; $parent.activeProject = $index" ng-class="{'active' : $parent.activeProject == $index}" class="animation-fade-in">
-				  <dt><small>{{project.title}}</small></dt>
+				  <dt><small ng-bind-html="project.title"></small></dt>
 				  <dd>
 					<ul class="list-unstyled" ng-class="{'text-muted' : $parent.activeProject == $index}">
 						<li class="visible-md-block visible-lg-block"><small>{{project.for}} | {{project.purpose}}</small></li>
@@ -44,7 +44,7 @@
 			</ul>
 		</div>
 		<div class="col-xs-8 col-sm-8 col-md-5 col-lg-5">
-			<h3 ng-bind="homeCtrl.selectedProject.title" class="animation-fade-in"></h3>
+			<h3 ng-bind-html="homeCtrl.selectedProject.title" class="animation-fade-in"></h3>
 			<ng-include src="homeCtrl.selectedProject.description"> </ng-include>
 		</div>
 	</div>
