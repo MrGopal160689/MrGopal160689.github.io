@@ -172,8 +172,8 @@
                                     width: stageData.width,
                                     height: stageData.height,
                                     path: {
-                                        img: './assets/tangible/',
-                                        audio: './assets/tangible/'
+                                        img: './assets/tangible',
+                                        audio: './assets/tangible'
                                     }
                                 })
                             });
