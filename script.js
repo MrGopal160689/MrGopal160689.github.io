@@ -72,31 +72,31 @@
             }, {
                 title: 'English Duniya',
                 date: new Date('21 March 2017'),
-                for: 'Zaya Learning Labs',
+                for: '@Zaya',
                 purpose: 'B2C',
                 description: './templates/project-english-duniya.html'
             }, {
                 title: 'Quiz Egg',
                 date: new Date('21 February 2017'),
-                for: 'Zaya Learning Labs',
+                for: '@Zaya',
                 purpose: 'Hackathon',
                 description: './templates/project-quiz-egg.html'
             }, {
                 title: 'Config App',
                 date: new Date('21 December 2016'),
-                for: 'Zaya Learning Labs',
+                for: '@Zaya',
                 purpose: 'B2B',
                 description: './templates/project-config-app.html'
             }, {
                 title: 'Curate App',
                 date: new Date('21 Jun 2015'),
-                for: 'Zaya Learning Labs',
+                for: '@Zaya',
                 purpose: 'B2B',
                 description: './templates/project-curate-app.html'
             }, {
                 title: 'Learn App',
                 date: new Date('21 December 2014'),
-                for: 'Zaya Learning Labs',
+                for: '@Zaya',
                 purpose: 'B2B',
                 description: './templates/project-learn-app.html'
             }, ]
