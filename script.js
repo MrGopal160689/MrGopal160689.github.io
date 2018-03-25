@@ -64,6 +64,12 @@
         homeCtrl.data = [{
             category: 'Recent projects',
             list: [{
+                title: 'Alex <span class="label label-success">New</span>',
+                date: new Date('20 March 2018'),
+                for: '@Shipmnts',
+                purpose: 'B2C',
+                description: './templates/alex.html'
+            },{
                 title: 'Tangible <span class="label label-success">New</span>',
                 date: new Date('21 May 2017'),
                 for: 'Learning',
