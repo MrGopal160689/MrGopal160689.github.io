@@ -64,13 +64,20 @@
         homeCtrl.data = [{
             category: 'Recent projects',
             list: [{
+                title: 'Product <span class="label label-success">New</span>',
+                date: new Date('2 June 2018'),
+                for: '@Shipmnts',
+                purpose: 'B2C',
+                description: './templates/shipment-product.html'
+            },
+            {
                 title: 'Alex <span class="label label-success">New</span>',
                 date: new Date('20 March 2018'),
                 for: '@Shipmnts',
                 purpose: 'B2C',
                 description: './templates/alex.html'
             },{
-                title: 'Tangible <span class="label label-success">New</span>',
+                title: 'Tangible <span class="label label-primary">Interactive</span>',
                 date: new Date('21 May 2017'),
                 for: 'Learning',
                 purpose: 'B2C',
@@ -115,12 +122,18 @@
                 description: './templates/project-old-experience.html'
             }]
         }, {
-            category: 'Random',
+            category: 'Stuff I do',
             list: [{
-                title: 'Snap & stroke',
+                title: 'Snap',
                 for: 'People & nature',
                 purpose: 'Happiness',
                 description: './templates/random-photography.html'
+            },
+            {
+                title: 'Sketches',
+                for: 'Awarness',
+                purpose: 'Happiness',
+                description: './templates/instagram.html'
             }, {
                 title: 'Tutorial',
                 for: 'People',
