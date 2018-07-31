@@ -100,6 +100,13 @@
                 for: '@Zaya',
                 purpose: 'B2B',
                 description: './templates/project-config-app.html'
+            },
+            {
+                title: 'Class Cloud',
+                date: new Date('01 Jun 2016'),
+                for: '@Zaya',
+                purpose: 'Education',
+                description: './templates/project-class-cloud.html'
             }, {
                 title: 'Curate App',
                 date: new Date('21 Jun 2015'),
