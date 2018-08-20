@@ -102,7 +102,7 @@
                 description: './templates/project-config-app.html'
             },
             {
-                title: 'Class Cloud',
+                title: 'Class Cloud <span class="label label-primary">Onsite Research</span>',
                 date: new Date('01 Jun 2016'),
                 for: '@Zaya',
                 purpose: 'Education',
