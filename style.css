@@ -59,3 +59,7 @@ ul.project-list > dl,
 ul.category-list > li{
   cursor :pointer;
 }
+.profile-logo{
+  border-radius : 50%;
+  width : 72px;
+}
